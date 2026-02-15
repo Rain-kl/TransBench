@@ -135,6 +135,7 @@ def run() -> int:
     start = perf_counter()
     total_success = 0
     total_failed = 0
+    combined_rows: list[tuple[ExamItem, str]] = []
 
     for task in selected_tasks:
         items = parsed.tasks[task]
@@ -151,6 +152,11 @@ def run() -> int:
         output_path = output_dir / f"result_{task}.csv"
         write_results_csv(output_path, rows)
         logger.info("Wrote {} rows to {}", len(rows), output_path)
+        combined_rows.extend(rows)
+
+    combine_output_path = output_dir / "result_combine.csv"
+    write_results_csv(combine_output_path, combined_rows)
+    logger.info("Wrote {} rows to {}", len(combined_rows), combine_output_path)
 
     elapsed = perf_counter() - start
     logger.info(
