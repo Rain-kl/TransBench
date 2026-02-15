@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import random
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
@@ -17,6 +18,7 @@ from .writer import write_results_csv
 
 
 VALID_TASKS = {"zh_en", "en_zh"}
+TASK_SEED_OFFSETS = {"zh_en": 11, "en_zh": 29}
 
 
 def parse_args() -> argparse.Namespace:
@@ -36,6 +38,9 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Number of concurrent worker threads",
     )
+    parser.add_argument("--zh_en_limit", type=int, default=None, help="Random sample size for zh_en; -1 for unlimited")
+    parser.add_argument("--en_zh_limit", type=int, default=None, help="Random sample size for en_zh; -1 for unlimited")
+    parser.add_argument("--random_seed", type=int, default=None, help="Random seed for sampling")
     return parser.parse_args()
 
 
@@ -54,6 +59,17 @@ def configure_logger(logs_dir: Path) -> Path:
     log_path = logs_dir / f"run_{ts}.log"
     logger.add(log_path, level="INFO", encoding="utf-8")
     return log_path
+
+
+def sample_items(task: str, items: list[ExamItem], limit: int, random_seed: int) -> list[ExamItem]:
+    if limit == -1 or limit >= len(items):
+        return items
+    if limit == 0:
+        return []
+
+    rng = random.Random(random_seed + TASK_SEED_OFFSETS[task])
+    sampled_indexes = sorted(rng.sample(range(len(items)), limit))
+    return [items[idx] for idx in sampled_indexes]
 
 
 def translate_task(
@@ -107,7 +123,13 @@ def run() -> int:
     base_dir = Path.cwd()
 
     continue_on_error = args.continue_on_error.lower() == "true"
-    config = load_config(continue_on_error=continue_on_error, workers=args.workers)
+    config = load_config(
+        continue_on_error=continue_on_error,
+        workers=args.workers,
+        zh_en_limit=args.zh_en_limit,
+        en_zh_limit=args.en_zh_limit,
+        random_seed=args.random_seed,
+    )
 
     logs_dir, output_dir = ensure_dirs(base_dir, args.outdir)
     log_path = configure_logger(logs_dir)
@@ -117,12 +139,15 @@ def run() -> int:
 
     logger.info("Starting translation benchmark")
     logger.info(
-        "Config model={}, input={}, outdir={}, tasks={}, workers={}, continue_on_error={}",
+        "Config model={}, input={}, outdir={}, tasks={}, workers={}, limits={{'zh_en': {}, 'en_zh': {}}}, seed={}, continue_on_error={}",
         config.model_name,
         input_path,
         output_dir,
         selected_tasks,
         config.workers,
+        config.zh_en_limit,
+        config.en_zh_limit,
+        config.random_seed,
         config.continue_on_error,
     )
 
@@ -138,7 +163,10 @@ def run() -> int:
     combined_rows: list[tuple[ExamItem, str]] = []
 
     for task in selected_tasks:
-        items = parsed.tasks[task]
+        raw_items = parsed.tasks[task]
+        task_limit = config.zh_en_limit if task == "zh_en" else config.en_zh_limit
+        items = sample_items(task=task, items=raw_items, limit=task_limit, random_seed=config.random_seed)
+        logger.info("Task {} selected {}/{} items", task, len(items), len(raw_items))
         rows, success_count, fail_count = translate_task(
             task=task,
             items=items,

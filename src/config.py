@@ -17,12 +17,18 @@ class AppConfig:
     timeout: float
     retries: int
     workers: int
+    zh_en_limit: int
+    en_zh_limit: int
+    random_seed: int
     continue_on_error: bool
 
 
 def load_config(
     continue_on_error: bool | None = None,
     workers: int | None = None,
+    zh_en_limit: int | None = None,
+    en_zh_limit: int | None = None,
+    random_seed: int | None = None,
     env_file: str = ".env",
 ) -> AppConfig:
     load_dotenv(env_file)
@@ -46,6 +52,13 @@ def load_config(
     resolved_workers = workers if workers is not None else int(os.getenv("WORKERS", "4"))
     if resolved_workers <= 0:
         raise ValueError("WORKERS must be a positive integer")
+    resolved_zh_en_limit = zh_en_limit if zh_en_limit is not None else int(os.getenv("ZH_EN_LIMIT", "-1"))
+    resolved_en_zh_limit = en_zh_limit if en_zh_limit is not None else int(os.getenv("EN_ZH_LIMIT", "-1"))
+    if resolved_zh_en_limit < -1:
+        raise ValueError("ZH_EN_LIMIT must be -1 or a non-negative integer")
+    if resolved_en_zh_limit < -1:
+        raise ValueError("EN_ZH_LIMIT must be -1 or a non-negative integer")
+    resolved_random_seed = random_seed if random_seed is not None else int(os.getenv("RANDOM_SEED", "42"))
 
     resolved_continue = continue_on_error
     if resolved_continue is None:
@@ -60,6 +73,9 @@ def load_config(
         timeout=timeout,
         retries=retries,
         workers=resolved_workers,
+        zh_en_limit=resolved_zh_en_limit,
+        en_zh_limit=resolved_en_zh_limit,
+        random_seed=resolved_random_seed,
         continue_on_error=resolved_continue,
     )
 
