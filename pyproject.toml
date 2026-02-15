@@ -1,0 +1,9 @@
+[project]
+name = "transbench"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "loguru>=0.7.3",
+    "tqdm>=4.67.3",
+]
