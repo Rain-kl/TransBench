@@ -1,0 +1,223 @@
+<exam>
+
+<zh_en>
+# 名词翻译（25题，计算机/日常/科学/文学）
+分布式系统
+容器编排
+零信任架构
+向量数据库
+低代码平台
+边缘计算
+持续集成
+技术债务
+通勤高峰
+社交边界
+情绪价值
+断舍离
+预制菜
+亲子关系
+基因编辑
+暗物质
+碳中和
+可再生能源
+临床试验
+神经可塑性
+叙事视角
+意象群
+时代隐喻
+悲剧美学
+黑色幽默
+
+# 长难句翻译（35题，偏推理与结构能力）
+如果我们只追求短期增长而忽视基础研究，下一次技术范式转移到来时就可能失去主动权。
+这个系统在测试环境里表现稳定，但一旦并发量接近峰值，隐藏在缓存一致性里的问题就会集中爆发。
+团队并不是缺少聪明人，而是缺少把复杂问题拆解为可验证假设的共同方法。
+当你把所有功能都堆到首页时，用户看似拥有更多选择，实际上更难完成最核心的任务。
+新员工在前三个月形成的工作习惯，往往比入职培训手册里的任何口号都更能决定团队文化。
+那家小店之所以总有人排队，不是因为装修多高级，而是老板记得常客不吃香菜这种细节。
+与其在社交媒体上反复证明自己，不如把时间留给真正会在困难时站在你身边的人。
+孩子问的问题有时看似天真，却会逼着成年人重新审视那些被默认正确的答案。
+我们原本以为只是换了一个沟通工具，后来才发现真正改变的是协作节奏和责任边界。
+预算削减之后，最先被取消的常常是长期项目，而这些项目恰恰决定了三年后的竞争力。
+虽然实验结果尚未达到统计显著性，但多个独立样本呈现出同方向变化，这值得继续追踪。
+研究人员提醒公众，相关性并不等于因果性，尤其在样本量有限时更容易产生误判。
+这项疗法在早期试验中显示出希望，不过其长期副作用仍需通过更大规模随访来确认。
+当观测仪器的分辨率提升一个数量级，我们对同一现象的解释框架也随之被迫更新。
+气候模型给出的不是唯一结论，而是一组概率分布，政策制定必须在不确定性中做决策。
+小说没有直接写战争，却通过一盏反复熄灭的煤油灯让读者感到时代的阴影。
+她的诗句看似平静，停顿与留白却像暗流一样推动情感在读者心里缓慢堆积。
+导演刻意省略高潮场面，把叙事重心放在失败之后的沉默，这反而让结局更有力量。
+译者若只追求字面对应，往往会牺牲原文的节奏和语气，从而错过真正的文学性。
+这篇散文最难翻译的不是典故，而是那种若即若离的自嘲口吻。
+在多语言产品中，同一个按钮文案在不同文化里可能触发完全不同的心理预期。
+我们花了两周优化启动速度，结果用户满意度提升的关键却是首次使用时的引导文案。
+即使结论正确，若推理过程无法复现，也很难说服同行接受这项研究。
+一项技术是否先进，不只看模型参数规模，还要看它在真实场景中的可维护性与能耗。
+当实验失败成为可公开讨论的常态，团队学习速度通常会比只展示成功案例时更快。
+这次暴雨并没有刷新历史极值，却因排水系统老化让一座城市在两小时内陷入瘫痪。
+医生解释方案时用了大量术语，病人点头表示理解，但回家后依然不知道该如何用药。
+他在演讲里引用了许多数据，然而最打动听众的却是那个关于母亲的简短故事。
+如果把所有风险都转移给供应商，看起来成本下降了，实际上只是把不确定性延后结算。
+我们可以接受进度放缓，但不能接受在需求不清楚时仓促上线再让用户买单。
+这篇论文方法并不复杂，真正难得的是作者把失败实验也系统地写进了附录。
+你越想把每句话都说得无懈可击，越容易失去对话中最珍贵的真实感。
+她离开故乡多年后才明白，记忆之所以温柔，并不是因为过去没有裂缝。
+当机器能够生成看似完美的文本时，人类写作者更需要证明自己为何值得被阅读。
+这场争论表面上关于术语定义，深层上却是两种价值排序的冲突。
+
+# 信达雅翻译（20题，偏修辞与文风）
+山重水复疑无路，柳暗花明又一村。
+纸上得来终觉浅，绝知此事要躬行。
+既要仰望星空，也要脚踏实地。
+授人以鱼不如授人以渔。
+千里之行，始于足下。
+这座城市醒得很早，却很少有人真正停下来吃一顿慢早餐。
+她说“没关系”的时候，语气里的颤抖比眼泪更诚实。
+他把失败称作弯路，其实那是通往成熟的必经路标。
+风从旧巷穿过，把童年的叫卖声吹得忽远忽近。
+灯火可亲，柴米有味，便是寻常日子的英雄主义。
+所谓天赋，不过是把重复做到别人不愿坚持的程度。
+你可以暂时看不到答案，但不要因此停止提问。
+一个人真正的体面，不在顺境里的风光，而在失意时仍不苛责他人。
+我们都在学着告别，只是有人把转身写成了诗。
+雨停了，树叶还在滴水，像一句话说完后仍有回响。
+她并非无所畏惧，只是决定先迈出那一步再与恐惧和解。
+这个世界奖励速度，但深刻往往来自缓慢。
+若你长期凝视深渊，也别忘了回头看看身后的灯。
+说理可以赢得辩论，共情才能赢得人心。
+愿你历尽千帆，归来仍有少年般的好奇。
+
+# 场景表达与语体转换（20题，偏实用表达）
+请把会议纪要在今晚六点前发我，我需要据此更新明天的客户提案。
+麻烦你到楼下代收一下快递，我现在在视频会议里暂时走不开。
+这道菜有点辣，能帮我换成不放辣椒的版本吗？
+我临时有事可能会晚到十分钟，你们先开始不用等我。
+如果你周末有空，我们可以一起把旧衣服整理出来捐掉。
+这家医院网上预约很快就满号，建议你提前一周设置提醒。
+我已经把修改意见标在文档批注里，辛苦你看完后统一回复。
+由于天气原因，原定于今晚的户外活动将改到室内进行。
+抱歉刚才语气有点急，我的本意是想尽快把问题解决掉。
+这份合同的付款条款我还需要和法务再确认一次。
+为了减少误解，我们把关键决策都记录在共享文档中。
+她看起来很平静，但其实在为即将到来的答辩做最后冲刺。
+这款应用上手门槛不高，真正难的是持续使用形成习惯。
+社区图书馆虽然不大，却总能在雨天给人一种被收留的安全感。
+他并不擅长夸夸其谈，却总能在关键时刻给出可执行的方案。
+如果实验数据今晚还没跑完，我们就把发布计划顺延到下周一。
+你先别急着下结论，等把原始样本再核对一遍。
+奶奶常说，饭桌上的沉默比争吵更让人心慌。
+当我们终于谈到彼此真正担心的事情时，谈判才算正式开始。
+请在提交前检查单位和小数点，很多低级错误都出在这里。
+</zh_en>
+
+<en_zh>
+# Noun Translation (25 items, computer/daily/science/literature)
+distributed tracing
+prompt engineering
+retrieval-augmented generation
+feature flag
+dependency injection
+memory leak
+fault tolerance
+backward compatibility
+rush hour commute
+work-life balance
+emotional labor
+impulse purchase
+digital detox
+neighborhood grocery store
+peer review
+quantum entanglement
+gene sequencing
+placebo effect
+ecosystem resilience
+carbon footprint
+unreliable narrator
+stream of consciousness
+dramatic irony
+coming-of-age novel
+poetic license
+
+# Long and Complex Sentences (35 items, reasoning-heavy)
+Although the prototype looked impressive in demos, it failed in production because no one had tested how it behaved under unstable network conditions.
+The team agreed to postpone the release, not because the core feature was unfinished, but because the migration plan could have broken existing customer workflows.
+If you optimize only for click-through rate, you may win short-term attention while quietly eroding long-term user trust.
+What appears to be a simple bug is often the visible symptom of a deeper mismatch between product assumptions and real user behavior.
+By the time we realized the documentation was outdated, three new hires had already learned the wrong deployment process.
+She speaks softly, yet every sentence lands with the precision of someone who has revised her thoughts for years.
+We kept adding notifications to improve engagement, then discovered that constant interruption was exactly why users were leaving.
+The child did not ask for a perfect answer; he asked a question that adults were afraid to sit with.
+Even after the storm passed, the town remained without power, revealing how fragile the infrastructure had become.
+The restaurant is famous not for expensive ingredients, but for the patience with which it prepares ordinary food.
+The study does not prove causation, but the repeated pattern across independent datasets deserves serious attention.
+Once the telescope captured higher-resolution images, several textbook explanations had to be rewritten.
+The treatment showed promise in early trials, yet researchers warned that rare side effects might appear only in long-term follow-up.
+Policy makers asked for certainty, but climate scientists could only provide scenarios with different probabilities and trade-offs.
+A single outlier can distort the average, which is why robust statistics matter when decisions affect millions of people.
+The novel never names the war directly, but its silence is filled with the sounds of evacuation and absence.
+Her poems seem plain at first glance, until you notice how every pause redirects the emotional rhythm.
+The translator preserved the literal meaning, but the dialogue lost the irony that made the original unforgettable.
+The film avoids a triumphant ending, choosing instead to linger on the quiet cost of survival.
+He left his hometown decades ago, only to realize that memory edits the past as carefully as a novelist edits a draft.
+We spent months refining the algorithm, and then learned that clearer onboarding text improved outcomes more than any model tweak.
+A tool is not truly advanced if only experts can maintain it after the first wave of enthusiasm fades.
+The meeting sounded productive, yet no one had defined who would own the next decision by Friday.
+Every failed experiment was logged in detail, allowing the team to eliminate dead ends faster than their competitors.
+The merger looked efficient on paper, but it erased local knowledge that had quietly sustained service quality.
+Because the dataset was imbalanced, the model performed well overall while consistently failing on minority cases.
+The doctor used technical terms accurately, but the patient still went home unsure about when to take the medication.
+He cited dozens of statistics, but the audience remembered the story about his grandmother waiting in a clinic hallway.
+You can reduce visible cost by outsourcing risk, yet the uncertainty returns later as operational debt.
+We can tolerate a slower roadmap, but not a launch that turns users into unpaid testers.
+What looked like disagreement over terminology was actually a conflict between two value systems.
+As generative models become fluent, human writers must explain what depth, judgment, and accountability still mean.
+The city did not break rainfall records that week, but aging drains were enough to flood entire neighborhoods.
+The committee requested a single answer, while the evidence pointed to several plausible explanations.
+If we cannot reproduce the reasoning path, a correct conclusion is still a weak foundation for science.
+
+# Faithful, Expressive, Elegant Translation (20 items)
+Where there is a will, there is a way.
+A journey of a thousand miles begins with a single step.
+Give a person a fish and you feed them for a day; teach them to fish and you feed them for a lifetime.
+The lights are warm, the rice is fragrant, and ordinary days are quietly heroic.
+She said "I'm fine," but her trembling voice told a different story.
+He called it a detour, but it was the road on which he learned how to grow up.
+The wind passed through the old alley, carrying street cries from a childhood that never fully left.
+This world rewards speed, yet depth is often born in slowness.
+You may not see the answer yet, but do not stop asking better questions.
+Reason can win an argument; empathy can win a heart.
+Even after the rain stopped, drops kept falling from the leaves like an afterthought of the sky.
+Real dignity is not how brightly you shine in success, but how gently you treat others in defeat.
+We are all learning to say goodbye, only some people turn that turning away into poetry.
+Courage is not the absence of fear, but the decision to move while fear is still present.
+He was not fearless; he simply took one step before negotiating with his fear.
+The city wakes early, but few people sit down long enough for a slow breakfast.
+Talent is often just disciplined repetition that others are unwilling to sustain.
+May you cross many seas and still return with a beginner's curiosity.
+When words run out, silence continues the sentence.
+The deepest conversations begin when both sides admit what they are truly afraid of.
+
+# Scenario and Register Conversion (20 items)
+Please send me the meeting minutes by 6 p.m. so I can finalize tomorrow's client proposal.
+Could you pick up my package downstairs? I'm stuck in a video call.
+This dish is a bit too spicy for me; could you make a non-spicy version?
+I might be about ten minutes late because of an urgent issue, so please start without me.
+If you're free this weekend, we can sort out old clothes and donate them together.
+Appointments at this hospital fill up quickly online, so set a reminder at least a week in advance.
+I've left comments in the document; please review them and reply in one batch.
+Due to weather conditions, tonight's outdoor event will be moved indoors.
+Sorry if I sounded sharp earlier; I just wanted to resolve the issue quickly.
+I still need to confirm the payment terms in this contract with our legal team.
+To reduce misunderstandings, let's document all key decisions in a shared file.
+She looks calm, but she's sprinting toward the final stretch of her thesis defense.
+This app is easy to start, but hard to stick with long enough to form a habit.
+The community library is small, yet on rainy days it feels like a shelter.
+He is not a flashy speaker, but he delivers executable plans when it matters.
+If the experiment hasn't finished running tonight, we'll move the release to next Monday.
+Let's not jump to conclusions until we recheck the raw samples.
+Grandma used to say that silence at the dinner table can be more unsettling than an argument.
+The negotiation only truly began when we spoke about what each side feared losing.
+Please verify units and decimal points before submission; many avoidable errors happen there.
+</en_zh>
+
+</exam>
