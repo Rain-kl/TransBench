@@ -1,49 +1,72 @@
-# Contributing Guide
+# 贡献指南
 
-Thanks for contributing to TransBench.
+感谢您对TransBench的贡献。
 
-## Development Setup
+## 开发环境配置
 
-1. Install `uv`.
-2. Create `.env` from `.env.example` and fill required values.
-3. Install deps and run:
+1. 使用`uv`或者 pip。
+
+2. 根据`.env.example`文件创建`.env`文件，并填写所需的值。
+
+3. 安装必要的依赖项，然后运行以下命令：
 
 ```bash
+# uv
 uv sync
-./run.sh --tasks zh_en,en_zh
+./run.sh
+#或者
+uv run python -m src.main "$@"
+```
+```bash
+# pip
+pip install .
+python -m src.main "$@"
 ```
 
-## Project Structure
+## 项目结构
 
-- `src/parser.py`: parse `exam.txt`
-- `src/translator.py`: LLM translation logic
-- `src/main.py`: CLI orchestration and concurrency
-- `src/writer.py`: CSV output
+- `src/parser.py`：解析`exam.txt`文件。
 
-## Pull Request Rules
+- `src/translator.py`：LLM翻译逻辑。
 
-- Keep PRs focused and small.
-- Add/update docs when behavior changes.
-- Ensure commands pass before opening PR:
+- `src/main.py`：命令行接口协调与并发处理。
+
+- `src/writer.py`：将结果输出为CSV格式。
+
+## 提交请求的规则
+
+- 确保提交的请求内容简洁且针对性强。
+
+- 当功能发生变化时，请更新相关文档。
+
+- 在提交请求之前，请确保相关命令能够正常执行：
 
 ```bash
 python -m compileall src
 ```
 
-## Commit Messages
+## 合并请求的描述规则
 
-Prefer clear prefixes:
+建议使用清晰的前缀来描述请求内容：
 
-- `feat:` new functionality
-- `fix:` bug fix
-- `docs:` docs only
-- `refactor:` code refactor
+- `feat:`：新增的功能。
 
-## Reporting Issues
+- `fix:`：修复的错误。
 
-Use issue templates and include:
+- `docs:`：仅用于更新文档。
 
-- expected behavior
-- actual behavior
-- reproduction steps
-- sample input/output (if available)
+- `refactor:`：代码重构。
+
+- `archive`: 提交测试样本。
+
+## 报告问题的方法
+
+请使用问题模板，并包含以下信息：
+
+- 预期的行为。
+
+- 实际发生的行为。
+
+- 重现问题的步骤。
+
+- 可用的示例输入/输出数据。
