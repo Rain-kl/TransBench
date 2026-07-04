@@ -10,16 +10,34 @@
 - 可选地为每个任务设置随机采样比例（通过 `ZH_EN_LIMIT` / `EN_ZH_LIMIT` 参数控制）
 - 每个任务的结果会以 CSV 格式输出，同时也会生成综合结果文件
 
+## 文档站点
+
+本地预览评测文档：
+
+```bash
+pnpm install
+pnpm run docs:dev
+```
+
+构建静态站点：
+
+```bash
+pnpm run docs:build
+```
+
+文档包含快速入门、评分标准，以及按 **试题版本 → 基准模型** 分类的评测结果索引。
+
 ## 测试结果归档
-[查看测试结果](https://github.com/Rain-kl/TransBench/tree/main/archive)
 
-查阅仓库 archive 目录下的测试结果归档，了解不同模型在该基准测试上的表现。
-
-测试结果按照以下格式命名：
+评测结果存放于 `docs/result/`，目录结构：
 
 ```
-{模型名称}-{模型参数}-{评判模型}.md
+result/<exam-version>/<bench-model>/
+├── result_combine.csv
+└── <评分模型>.md
 ```
+
+运行 `pnpm run docs:dev` 可本地预览完整文档站点。
 
 ## 快速入门
 
