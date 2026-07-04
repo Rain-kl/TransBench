@@ -2,6 +2,8 @@
 
 这是一个用于评估大型语言模型在汉英翻译任务上的性能的基准测试工具。
 
+评测结果查看: https://transbench.pages.dev
+
 ## 主要特性
 
 - 能够解析包含 `<zh_en>` 和 `<en_zh>` 部分的 `exam.txt` 文件
@@ -32,8 +34,6 @@ pnpm run build
 文档包含快速入门、评分标准，以及按 **试题版本 → 基准模型** 分类的评测结果索引。
 
 ### Cloudflare Pages 部署
-
-将 Cloudflare Pages 的**根目录**设为 `docs`，只构建文档站点，不会触发 Python 依赖安装。
 
 | 配置项 | 值 |
 | --- | --- |
