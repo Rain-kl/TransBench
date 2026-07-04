@@ -27,6 +27,14 @@ pnpm run docs:build
 
 文档包含快速入门、评分标准，以及按 **试题版本 → 基准模型** 分类的评测结果索引。
 
+### Cloudflare Pages 部署
+
+| 配置项 | 值 |
+| --- | --- |
+| 框架预设 | None |
+| 构建命令 | `pnpm install && pnpm run build` |
+| 构建输出目录 | `docs/.vitepress/dist` |
+
 ## 测试结果归档
 
 评测结果存放于 `docs/result/`，目录结构：
