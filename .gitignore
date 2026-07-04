@@ -219,7 +219,7 @@ __marimo__/
 
 outputs/
 
-# VitePress
-node_modules/
+# VitePress (docs/)
+docs/node_modules/
 docs/.vitepress/cache/
 docs/.vitepress/dist/

@@ -12,28 +12,42 @@
 
 ## 文档站点
 
-本地预览评测文档：
+文档项目位于 `docs/` 目录，与 Python 基准测试工具分离。本地预览评测文档：
 
 ```bash
+cd docs
 pnpm install
-pnpm run docs:dev
+pnpm run dev
 ```
 
 构建静态站点：
 
 ```bash
-pnpm run docs:build
+cd docs
+pnpm run build
 ```
+
+也可在仓库根目录使用 Makefile：`make docs-install`、`make docs-dev`、`make docs-build`。
 
 文档包含快速入门、评分标准，以及按 **试题版本 → 基准模型** 分类的评测结果索引。
 
 ### Cloudflare Pages 部署
 
+将 Cloudflare Pages 的**根目录**设为 `docs`，只构建文档站点，不会触发 Python 依赖安装。
+
 | 配置项 | 值 |
 | --- | --- |
+| 根目录 | `docs` |
 | 框架预设 | None |
 | 构建命令 | `pnpm install && pnpm run build` |
-| 构建输出目录 | `docs/.vitepress/dist` |
+| 构建输出目录 | `.vitepress/dist` |
+
+环境变量（Settings → Environment variables，可选）：
+
+| 变量 | 值 |
+| --- | --- |
+| `NODE_VERSION` | `22` |
+| `PNPM_VERSION` | `11.5.0` |
 
 ## 测试结果归档
 
@@ -45,7 +59,7 @@ result/<exam-version>/<bench-model>/
 └── <评分模型>.md
 ```
 
-运行 `pnpm run docs:dev` 可本地预览完整文档站点。
+运行 `cd docs && pnpm run dev` 可本地预览完整文档站点。
 
 ## 快速入门
 
